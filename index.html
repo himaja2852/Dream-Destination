@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travels</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar {
+    
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+    }
+
+    #menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .navbar a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .fullscreen-bg {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .fullscreen-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .text-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border: 2px solid #000; 
+      border-radius: 10px;
+    }
+
+    .text-box p {
+      margin: 0;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div id="menu-icon">&#9776;</div>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Destination</a>
+    <a href="#">Offers</a>
+    <a href="#" class="contact-link">Contact</a>
+    <div class="search-container">
+      <form action="/search" method="get">
+        <input type="text" class="search-input" name="q" placeholder="Search...">
+        </form>
+      
+    </div>
+  </div>
+
+  <div class="fullscreen-bg">
+    <img src="https://cityfurnish.com/blog/wp-content/uploads/2023/08/beach-near-hotel-min-1200x800.jpg" alt="Background Image">
+    <div class="text-overlay">
+      Dream Destination
+      <div class="text-box">
+        <p>Dream Destination Travel Agency</p>
+        <button class="btn">Book Your Trip</button>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
